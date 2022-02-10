@@ -1,4 +1,4 @@
 /node_modules/
 /public/build/
-
+/view/
 .DS_Store

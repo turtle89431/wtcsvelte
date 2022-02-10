@@ -14,7 +14,6 @@ const websocketServer = new WebSocket.Server({
     noServer: true
 });
 websocketServer.on('connection', (socket, req) => {
-    console.log(req.session)
     socket.on('message', message => {
         let incoming = JSON.parse(message.toString("ascii"))
         incoming.reply = `server got ${JSON.stringify(incoming)}`
