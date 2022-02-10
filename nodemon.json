@@ -1,0 +1,11 @@
+{
+    "watch": [
+        "src"
+    ],
+    "ext": ".ts,.js,.svelte,.md,.css",
+    "delay": "500",
+    "ignore": [
+        "public"
+    ],
+    "exec": "rollup -c && node src/server.js"
+}
